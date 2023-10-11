@@ -18,16 +18,16 @@ class AnimalFactory extends Factory
     {
         return [
             'id_animal' => fake()->numberBetween(1,10),
-            'nome' => fake()->numberBetween(1,10),
+            'nome' => fake()->name(),
             'tipo' => fake()->numberBetween(1,10),
             'idade' => fake()->numberBetween(1,10),
-            'sexo' => fake()->numberBetween(1,2),
-            'cor' => fake()->numberBetween(1,10),
-            'vacinação' => fake()->numberBetween(1,10),
-            'castracao' => fake()->numberBetween(1,10),
+            'sexo' => fake()->text(),
+            'cor' => fake()->text(),
+            'vacinação' => fake()->text(),
+            'castracao' => fake()->text(),
             'descricao' => fake()->text(),
-            'situacao'  => fake()->numberBetween(1,6),
-            'vacina'  => fake()->numberBetween(1,10),
+            'situacao'  => fake()->text(),
+            'vacina'  => fake()->text(),
 
             ];
     }

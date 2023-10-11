@@ -21,7 +21,7 @@ class HistoricoClienteFactory extends Factory
             'id_cliente' => fake()->numberBetween(1,10),
             'data_adocao' => fake()->dateTimeBetween(now(),'+30 week'),
             'qtde_animais' => fake()->numberBetween(1,10),
-            'tipo_animal' => fake()->text(),
+            'tipo_animal' => fake()->numberBetween(1,10),
             'raca_animal' => fake()->text(),
             ];
     }

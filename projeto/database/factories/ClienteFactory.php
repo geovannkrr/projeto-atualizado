@@ -18,7 +18,7 @@ class ClienteFactory extends Factory
     {
         return [
             'id_cliente' => fake()->numberBetween(1,10),
-            'nome' => fake()->numberBetween(1,10),
+            'nome' => fake()->name(),
             'idade' => fake()->numberBetween(1,10),
             'cpf' => fake()->numberBetween(1,10),
             'email' => fake()->unique()->safeEmail(),

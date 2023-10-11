@@ -26,7 +26,7 @@ class AdocaoFactory extends Factory
             'raca_animal' => fake()->text(),
             'cor_animal' => fake()->text(),
             'cep_cliente' => fake()->numberBetween(1,10),
-            'tipo_animal' => fake()->text(),
+            'tipo_animal' => fake()->numberBetween(1,10),
         ];
     }
 }
